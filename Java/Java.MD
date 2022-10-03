@@ -1,3 +1,3 @@
 # Java 
 
-All Java solutionsn will be located in this folder. 
+All Java solutions will be located in this folder. 
