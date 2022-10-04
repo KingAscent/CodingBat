@@ -1,16 +1,12 @@
 /*
-Given a string, return a new string made of every other char starting with the first, so "Hello" yields "Hlo".
+ * Given a string, return a new string made of every other char starting with the first, so "Hello" yields "Hlo".
+ */
 
-stringBits("Hello") → "Hlo"
-stringBits("Hi") → "H"
-stringBits("Heeololeo") → "Hello"
-*/
-
-public String stringBits(String str){
+public String stringBits(String str) {
   String bits = "";
-  for(int i = 0; i < str.length(); i++){
-    if(i % 2 == 0)
-      bits += str.charAt(i);
+  // To get every other character starting from the first. 
+  for(int i = 0; i < str.length(); i += 2){
+    bits += str.charAt(i);
   }
-  return bits;
+  return bits; 
 }
