@@ -1,18 +1,15 @@
 /*
-Given a string, return true if the first instance of "x" in the string is immediately followed by another "x".
+ *Given a string, return true if the first instance of "x" in the string is immediately followed by another "x".
+ */
 
-doubleX("axxbb") → true
-doubleX("axaxax") → false
-doubleX("xxxxx") → true
-*/
-
-boolean doubleX(String str){
-  for(int i = 0; i < str.length() - 1; i++){
-    if(str.charAt(i) == 'x'){
-      if(str.substring(i, i + 2).equals("xx"))
-       return true;
-       i = str.length();
-    }
-  }
-  return false;
+boolean doubleX(String str) {
+  int firstX = str.indexOf("x");   // indexOf returns -1 if no "x"
+  
+  // If no "x" or if string is only 1 character or less long, 
+  // or if x is the last character in the string
+  // returns false
+  if((firstX == -1) || (str.length() <= 1) || (firstX == str.length() - 1))
+    return false;
+  
+  return (str.substring(firstX, firstX + 2).equals("xx"));
 }
