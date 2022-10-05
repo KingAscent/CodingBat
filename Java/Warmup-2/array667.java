@@ -7,6 +7,7 @@
 public int array667(int[] nums) {
   int count = 0;
   for(int i = 0; i < nums.length - 1; i++){
+
     // Checks to see if the number is 6, and if it is, checks to see
     // if the next number is a 6 or 7
     if(nums[i] == 6 && (nums[i + 1] == 6) || nums[i + 1] == 7){
