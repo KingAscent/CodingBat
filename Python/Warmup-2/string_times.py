@@ -3,6 +3,9 @@
 
 def string_times(str, n):
   times = ""
+  
+  # Repeats str an n number of times
   for i in range(n):
     times += str
+    
   return times
