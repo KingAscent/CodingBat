@@ -13,6 +13,5 @@ public int[] fizzArray3(int start, int end) {
   for(int i = 0; i < length; i++){
     list[i] = end - length + i;
   }
-  
   return list;
 }
