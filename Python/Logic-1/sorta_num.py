@@ -4,6 +4,6 @@
 def sorta_sum(a, b):
   # Check if the sum si between 10 and 19, inclusive
   # Otherwise, return the sum
-  if (10 <= a + b) and (a + b <= 19):
+  if (10 <= a + b <= 19):
     return 20
   return a + b
