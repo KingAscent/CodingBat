@@ -5,7 +5,5 @@
  */
 
 public boolean specialEleven(int n) {
-  if(n % 11 <= 1)
-    return true;
-  return false;
+  return (n % 11 <= 1);
 }
