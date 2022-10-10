@@ -8,11 +8,11 @@
 def alarm_clock(day, vacation):
   # Check if we are on vacation, and if so, return the proper time for alarm
   if(vacation):
-    if((1 <= day) and (day <= 5)):
+    if(1 <= day <= 5):
       return '10:00'
     return 'off'
   
   # If we are not on vacation, return the proper time for the alarm
-  if((1 <= day) and (day <= 5)):
+  if(1 <= day <= 5):
     return '7:00'
   return '10:00'
