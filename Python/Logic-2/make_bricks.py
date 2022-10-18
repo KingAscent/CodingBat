@@ -5,7 +5,7 @@
 # See also: Introduction to MakeBricks
 
 def make_bricks(small, big, goal):
-  # Ensure we have enough brikcs to meet our goal
+  # Ensure we have enough bricks to meet our goal
   if small + (big * 5) < goal:
     return False
   
