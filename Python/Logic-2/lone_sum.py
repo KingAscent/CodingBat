@@ -1,5 +1,6 @@
 # Given 3 int values, a b c, return their sum. However, if one of the values
 # is the same as another of the values, it does not count towards the sum.
+
 def lone_sum(a, b, c):
   # Check if a, b, or c equal one another
   if (a == b) or (a == c) or (b == c):
