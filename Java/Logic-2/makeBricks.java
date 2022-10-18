@@ -7,9 +7,12 @@
  */
 
 public boolean makeBricks(int small, int big, int goal) {
+  // Ensure we have enough brikcs to meet our goal
   if(small + (big * 5) < goal)
     return false;
-  
+
+  // Check if we have enough smalls to reach our goal if
+  // we do not have enough big bricks
   if(small < goal % 5)
     return false;
   
