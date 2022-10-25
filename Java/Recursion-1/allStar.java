@@ -4,10 +4,8 @@
  */
 
 public String allStar(String str) {
-  String starred = "";
-  
   if(str.length() == 0)
-    return starred;
+    return "";
   
   if(str.length() == 1)
     return Character.toString(str.charAt(0));
