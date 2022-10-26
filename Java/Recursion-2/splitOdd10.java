@@ -15,7 +15,7 @@ public boolean splitOdd10(int[] nums) {
 public boolean splitOddHelper(int start, int left, int right, int[] nums) {
   // Base case
   if(nums.length <= start)
-    return ((left % 10 == 0 && right % 2 != 0) || left % 2 != 0 && right % 10 == 0);
+    return ((left % 10 == 0 && right % 2 != 0) || (left % 2 != 0 && right % 10 == 0));
   
   return splitOddHelper(start + 1, left + nums[start], right, nums) ||
          splitOddHelper(start + 1, left, right + nums[start], nums);
