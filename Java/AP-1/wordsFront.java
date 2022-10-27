@@ -14,5 +14,4 @@ public String[] wordsFront(String[] words, int n) {
   
   // Return the new array
   return front;
-  
 }
