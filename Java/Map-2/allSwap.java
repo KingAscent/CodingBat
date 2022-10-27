@@ -11,7 +11,8 @@ public String[] allSwap(String[] strings) {
   // Create a map
   Map<Character, Integer> map = new HashMap();
   
-  // Go over the array
+  // Go over the array, looking for keys that we have encountered previously and
+  // need to swap
   for(int i = 0; i < strings.length; i++){
     if(!map.containsKey(strings[i].charAt(0))){ // First time seeing this key
       map.put(strings[i].charAt(0), i);
